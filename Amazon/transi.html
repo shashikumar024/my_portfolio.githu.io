@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .t{
+        display: flex;
+        background-color: grey;
+        height: 300px;
+        align-items: center;
+        align-content:space-between;
+    }
+    .tran{
+    
+        display: flex;
+     height: 200px;
+        width: 200px;
+        /* background-color: aquamarine; */
+        transition: width 2s,height 2s , transform 2s;
+        transition-delay: 0.01s;
+        /* transition-timing-function:ease-in-out; */
+        border-radius: 25%;
+    }
+
+    .tran:hover{
+        width: 250px;
+        height: 220px;
+        border-radius: 30%;
+        /* transform: rotate(180deg); */
+        border-radius: 25%;
+    
+    }
+    
+</style>
+<body><div class="t">
+    <div class="tran">
+        <img src="m4.jpg" alt="">
+    </div></div>
+</body>
+</html>
