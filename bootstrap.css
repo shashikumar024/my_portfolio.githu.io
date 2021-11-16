@@ -1,0 +1,104 @@
+
+.col-sm-3 :hover{
+    color: blue;
+    
+}
+.name{
+    /* margin-top: 10%; */
+    margin-left: 10%;
+    color: white;
+    font-size: 25px;
+}
+#ui{
+    color: white;
+    font-size: 25px;
+    font-family:sans-serif;
+    margin-left: 20%;
+}
+.about{
+    width: 1200px;
+    height: auto;
+    background-color: black;
+    margin-left: 5%;
+    margin-top: -5%;
+    /* opacity: 10%; */
+    
+    
+}
+.container {
+    margin-left: 7%;
+    font-size: 32px;
+    margin-top: 20%;
+    font-family:  "Raleway", sans-serif;
+    color: #173b6c;
+    font-weight: bold;
+    background-color: black;
+    width: 1200px;
+    height: auto;
+    opacity: 91%;
+}
+
+.fas{
+    margin-left: -20px;
+    margin-right: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.img-thumbnail{
+    position: relative;
+    animation: wipe 0.5s linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .img-thumbnail{
+        animation-name: wipe;
+        animation-duration: 0.5s ;
+        animation-iteration-count: infinite;
+    }
+    
+}
+.nav-thumbnail{
+    position: relative;
+    animation: wipe 0.5s linear;
+    background-color: black; 
+    font-size: 20px;
+}
+
+
+@keyframes wipe {
+    0%{
+        transform: (0, 0.25);
+    }
+    100%{
+        transform: (1 , 0.25);
+    }
+    
+}
+.container1{
+    background-color: #f5f8fd;
+    /* width: 1140px; */
+    margin-left: 4.9%;
+    height: auto;
+
+}
+.container2 {
+    background-color: black;
+}
+.row{
+    background-color: black;
+}
+.col{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+
