@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking form</title>
+
+</head>
+<style>
+    .abc {
+        color: red;
+    }
+</style>
+<!-- <script>
+function myForm(){
+    let a = document.forms["myForm"]["fname"].value;
+    let b = document.forms["myForm"]["lname"].value;
+    let c = document.forms["myForm"]["num"].value;
+    let d = document.forms["myForm"]["email"].value;
+    let e = document.forms["myForm"]["add"].value;
+    let f = document.forms["myForm"]["flnum"].value;
+    if(a==""|| b==""|| c==""||d==""||e=="" || f==""){
+        alert("Fill the form completely");
+        return false;
+    } else{
+        alert("Successfully Submitted");
+        window.location='bestplace.html'
+    }
+}
+</script> -->
+
+<body>
+    <table width="100%" border=" black" style="border-collapse: collapse;">
+        <tr>
+            <th>
+                <!-- <form name="myForm" method="post" onsubmit="myForm()" role="form" action=""> -->
+                    HOTEL BOOKING FORM <br> <br>
+                    <hr>
+                    NAME: <input type="Name" name="" id="name" placeholder=" Enter your  First Name">
+                    <input type="text" name="lname" placeholder=" Enter your  Last Name"> <br> <br>
+                    CONTACT NO:<input type="cnumber" name="" value="" id="contact" placeholder=" Enter your mobile no">
+                    Email:<input type="text" name="" id="email" placeholder=" Enter your Email"> <br><br>
+                    ROOM TYPE <select name="" id="">
+                        <option value=""> standard Room(1 to 3 people)</option>
+                        <option value=""> Family Room(1 to 4 people)</option>
+                    </select>
+                    Address: <input type="text" name="" id="add" placeholder=" Enter your  address"> <br><br>
+                    Arrival Date And Time <input type="datetime-local">
+                    Departure Date: <input type="datetime-local"> <br> <br>
+
+                    <p class="abc">Free pick up?* </p>
+                    <input type="radio" name="gender" id="picme"> Yess Please!-Pick me up on Arrival <br><br>
+                    <input type="radio" name="gender" id=""> No Thanks-I'll mke My own way there <br><br>
+
+                    Flight NO: <input type="text" name="picme" placeholder=" ">
+                    Special Request: <input type="text" id="picme" placeholder="" width="40px" height="90px"> <br><br><br>
+                    <!-- <input type="submit" value="submit"  name="" id=""/> -->
+                    <button onclick="submitForm()"> submit</button>
+                    </form> 
+            </th>
+        </tr>
+    </table>
+    <!-- <img src="hhhh.jpg" alt="" width="1250px"> -->
+    <script>
+        function submitForm(){
+            let formname=document.getElementById("name").value;
+            let contact=document.getElementById("contact").value;
+            let emai=document.getElementById("email").value;
+            let adress=document.getElementById("add").value;
+            // let pic=document.getElementById("picme").value;
+            if(formname=="" || contact=="" || email=="" || adress==""){
+                alert("enter your details correctly")
+                // alert("message")
+            
+            }
+            else{
+                alert("form submitted succesfully")
+            }
+        }
+    </script>
+</body>
+
+</html>
